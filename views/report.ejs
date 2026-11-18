@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+
+
+  <body class="min-vh-100 d-flex flex-column bg-white">
+    <nav class="bg-primary bg-gradient shadow navbar navbar-expand-lg navbar-dark container-fluid px-4">
+      <a class="navbar-brand fw-bold" href="/">
+        <img src="/images/logo.png" alt="Bootstrap" width="70" height="70">
+      </a>
+      <ul class="navbar-nav ms-auto flex-row">
+        <li class="nav-item me-3 p-1">
+          <a class="nav-link text-light link-warning" href="/"><i class="fa-regular fa-house fa-3x"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container align-items-center justify-content-center d-flex my-4 flex-fill flex-column">
+      <form class="bg-primary-subtle border rounded p-4">
+        <div class="mb-4">
+          <label for="itemName" class="form-label fw-semibold">Item Name</label>
+          <input type="text" class="form-control" id="itemName" name="itemName" placeholder="e.g., Green Hoodie" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="status" class="form-label fw-semibold">Status: </label>
+          <select class="form-select" name="status" id="status">
+            <option selected disabled>Status of Item</option>
+            <option value="lost">Lost</option>
+            <option value="found">Found</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="location" class="form-label fw-semibold">Location</label>
+          <input type="text" class="form-control" id="location" name="location" placeholder="e.g., SHA Building" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="date" class="form-label fw-semibold">Date</label>
+          <input type="date" class="form-control"  id="date" name="date"   required>
+        </div>
+
+        <div class="mb-3">
+          <label for="contact" class="form-label fw-semibold">Contact</label>
+          <input type="text" class="form-control"  id="contact" name="contact" placeholder="e.g., Front Desk @ SIRC">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </main>    
+  </body> 
+</html>
