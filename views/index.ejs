@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+
+  <body class="min-vh-100 d-flex flex-column bg-white">
+    <nav class="bg-primary bg-gradient shadow navbar navbar-expand-lg navbar-dark container-fluid px-4">
+      <a class="navbar-brand fw-bold" href="/">
+        <img src="/images/logo.png" alt="Bootstrap" width="70" height="70">
+      </a>
+      <ul class="navbar-nav ms-auto flex-row">
+        <li class="nav-item me-3 p-1">
+          <a class="nav-link text-light link-warning" href="/"><i class="fa-regular fa-house fa-3x"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container align-items-center justify-content-center d-flex my-4 flex-fill flex-column ">
+      <section class="text-center mb-5">
+        <h1 class="display-5 mb-4 fw-bold text-dark">Campus Lost &amp; Found</h1> 
+        <p class="fs-3 mb-4 lead">Lost something that belongs to you or found something left behind?</p>
+        <p class="text-secondary small mb-4 fs-3">Click the button below to submit a report</p>
+        <a class="btn btn-primary btn-lg shadow fw-bold" href="/" role="button">Report <i class="fa-regular fa-paper-plane"></i></a>
+      </section>
+      <section class="border rounded-3 overflow-auto">
+        <table class="table table-striped mb-0">
+          <thead>
+
+            <tr>
+
+              <th scope="col">#</th>
+              <th scope="col">Item Name</th>
+              <th scope="col">Status</th>
+              <th scope="col">Location</th>
+              <th scope="col">Date</th>
+              <th scope="col">Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td class="fw-semibold">Water Bottle</td>
+              <td><span class="badge text bg-danger">Lost</span></td>
+              <td>Science Building</td>
+              <td>2026-11-18</td>
+              <td>student@ontariotechu.net</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td class="fw-semibold">AirPods Case</td>
+              <td><span class="badge bg-danger">Lost</span></td>
+              <td>Library 2nd Floor</td>
+              <td>2026-11-17</td>
+              <td>Security @ Libary</td>
+            </tr>
+          </tbody>
+        </table>       
+      </section>
+    </main>    
+  </body> 
 </html>
